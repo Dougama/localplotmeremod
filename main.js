@@ -49,7 +49,7 @@
 		`;
 		return li;
 	};
-	const url = 'fakedata.json';
+	const url = 'data.json';
 
 	let DOMLoaded = false;
 	let dataLoaded = false;
@@ -118,7 +118,7 @@
 	function openInner() {
 		let varData = db.find((dbItem, i) => i === selected);
 
-		if (!varData) return;
+		if (!varData) return; 
 
 		innerTitleElement.innerHTML = varData.name;
 		inner.classList.add('innerPage-open');
@@ -163,4 +163,6 @@
 	window.addEventListener('hashchange', function() {
 	  Router.check();
 	});
+	
+	
 })();
