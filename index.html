@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es-419">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Medidor</title>
+
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <div class="appWrapper">
+            <header class="appHeader">
+                <h1 class="appHeader-title">MeremoD</h1>
+            </header>
+
+            <main class="appMain">
+                <section class="appMain-section">
+                    <ul class="varsList" id="vars-list"></ul>
+                </section>
+            </main>
+
+            <div class="innerPage" id="inner">
+                <div class="innerPage-wrapper">
+                    <header class="innerPage-header">
+                        <h2 class="innerPage-header-title" id="inner-title"></h2>
+                        <a href="#/">Cerrar</a>
+                    </header>
+
+                    <div class="innerPage-content">
+                        <canvas class="chartCanvas" id="chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="chartjs.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
